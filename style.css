@@ -1,0 +1,25 @@
+.cloud1 {
+    animation-name: moveRight;
+    animation-duration: 200s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveRight {
+    0% { transform: translateX(0px); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(0px); }
+}
+
+.cloud2 {
+    animation-name: moveLeft;
+    animation-duration: 200s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveLeft {
+    0% { transform: translateX(0px); }
+    50% { transform: translateX(-100%); }
+    100% { transform: translateX(0px); }
+}

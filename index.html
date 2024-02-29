@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="mx-0 px-0 box-border">
+
+    <div class="background max-h-screen max-w-full overflow-hidden">
+
+        <div class="cloud1 absolute w-60 z-10 top-30 left-40">
+            <img src="./assets/cloud.png" alt="">
+        </div>
+
+        <div class="cloud2 absolute w-80 z-10 top-0 right-32">
+            <img src="./assets/cloud.png" alt="">
+        </div>
+
+        <div class="center absolute inset-0 z-20 flex justify-center items-center">
+            <div class="card w-96 bg-base-100 shadow-xl glass">
+                <div class="card-body">
+                    <h2 class="card-title flex justify-center text-black">LOGIN</h2>
+
+                        <label for="email" class="text-black">Email</label>
+                            <input type="email" placeholder="Email" class="input input-bordered input-primary w-full max-w-xs" />
+
+                        <label for="password" class="text-black">Password</label>
+                            <input type="password" placeholder="Password" class="input input-bordered input-primary w-full max-w-xs"/>
+
+                        <div class="remember flex items-center">
+                            <input type="checkbox" class="checkbox checkbox-primary checkbox-sm" />
+                            <p class="text-black ml-2">Remember me</p>
+                        </div>
+
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full max-w-xs mt-2 text-white">LOGIN</button>
+                    </div>
+
+                    <div class="text-bottom">
+                        <a href="#" class="text-black float-left text-sm hover:text-blue-700">Forget password?</a>
+                        <a href="#" class="text-black float-right text-sm hover:text-blue-700">Signup</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <img class="max-h-full max-w-full object-cover object-center relative -z-10" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+
+</body>
+
+</html>
